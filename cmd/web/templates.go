@@ -6,14 +6,6 @@ import (
 	"path/filepath"
 	"time"
 )
-// entendido, romper todo
-
-// Pato tocas algo y te rompo todo
-jlkasdjdslkfjsdlkfjasdlk;jasadfl;jsadflk;sdjflk;asjas;lkdjasd
-
-asdasd
-
-
 
 // Define a templateData type to act as the holding structure for
 // any dynamic data that we want to pass to our HTML templates.
