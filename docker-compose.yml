@@ -1,0 +1,26 @@
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - snippetbox-net
+  app:
+      # image: snippetbox:1.0.0
+      build:
+        context: .
+      ports:
+        - 4000:4000
+      depends_on:
+        - db 
+      networks:
+        - snippetbox-net
+
+
+networks:
+  snippetbox-net:
+    driver: bridge

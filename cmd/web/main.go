@@ -3,10 +3,12 @@ package main
 import (
 	"database/sql"
 	"flag"
+	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 	"os"
-	"html/template"
+	"time"
 
 	// Import the models package that we just created. You need to prefix this with
 	// whatever module path you set up back in chapter 02.01 (Project Setup and Creating
@@ -30,7 +32,8 @@ type application struct {
 
 func main() {
 	addr := flag.String("addr", ":4000", "HTTP network address")
-	dsn := flag.String("dsn", "root:root@/snippetbox?parseTime=true", "MySQL data source name")
+	// dsn := flag.String("dsn", "root:root@/snippetbox?parseTime=true", "MySQL data source name")
+	dsn := flag.String("dsn", "root:root@tcp(db:3306)/snippetbox?parseTime=true", "MySQL data source name")
 
 	flag.Parse()
 
@@ -40,7 +43,7 @@ func main() {
 	db, err := openDB(*dsn)
 
 	if err != nil {
-		errorLog.Fatal(err)
+		fmt.Println("****ERROR OPENDB()****", err)
 	}
 
 	defer db.Close()
@@ -74,6 +77,11 @@ func main() {
 // The openDB() function wraps sql.Open() and returns a sql.DB connection pool
 // for a given DSN.
 func openDB(dsn string) (*sql.DB, error) {
+	fmt.Println("Arranca el timer pinche madreee wey")
+	// TODO: improve this!
+	<-time.After(55 * time.Second)
+	fmt.Println("TERMIANANANANANAN el timer pinche madreee wey")
+
 	db, err := sql.Open("mysql", dsn)
 
 	if err != nil {
