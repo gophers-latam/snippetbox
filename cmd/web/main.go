@@ -1,9 +1,9 @@
 package main
 
 import (
+	"context"
 	"database/sql"
 	"flag"
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -22,13 +22,11 @@ import (
 // Add a snippets field to the application struct. This will allow us to
 // make the SnippetModel object available to our handlers.
 type application struct {
-	errorLog *log.Logger
-	infoLog  *log.Logger
-	snippets *models.SnippetModel
+	errorLog      *log.Logger
+	infoLog       *log.Logger
+	snippets      *models.SnippetModel
 	templateCache map[string]*template.Template
 }
-
-
 
 func main() {
 	addr := flag.String("addr", ":4000", "HTTP network address")
@@ -40,10 +38,9 @@ func main() {
 	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
 	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 
-	db, err := openDB(*dsn)
-
+	db, err := connDB(*dsn)
 	if err != nil {
-		fmt.Println("****ERROR OPENDB()****", err)
+		log.Fatal("open databases error: ", err)
 	}
 
 	defer db.Close()
@@ -57,9 +54,9 @@ func main() {
 	// Initialize a models.SnippetModel instance and add it to the application
 	// dependencies.
 	app := &application{
-		errorLog: errorLog,
-		infoLog:  infoLog,
-		snippets: &models.SnippetModel{DB: db},
+		errorLog:      errorLog,
+		infoLog:       infoLog,
+		snippets:      &models.SnippetModel{DB: db},
 		templateCache: templateCache,
 	}
 
@@ -77,13 +74,7 @@ func main() {
 // The openDB() function wraps sql.Open() and returns a sql.DB connection pool
 // for a given DSN.
 func openDB(dsn string) (*sql.DB, error) {
-	fmt.Println("Arranca el timer pinche madreee wey")
-	// TODO: improve this!
-	<-time.After(55 * time.Second)
-	fmt.Println("TERMIANANANANANAN el timer pinche madreee wey")
-
 	db, err := sql.Open("mysql", dsn)
-
 	if err != nil {
 		return nil, err
 	}
@@ -93,4 +84,28 @@ func openDB(dsn string) (*sql.DB, error) {
 	}
 
 	return db, nil
+}
+
+func connDB(dsn string) (*sql.DB, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
+	defer cancel()
+
+	var db *sql.DB
+	var err error
+
+	for {
+		select {
+		case <-ctx.Done():
+			return db, ctx.Err()
+		default:
+			db, err = openDB(dsn)
+			if err != nil {
+				log.Println("open database error: ", err)
+				<-time.After(3 * time.Second)
+				continue
+			}
+
+			return db, err
+		}
+	}
 }
