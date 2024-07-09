@@ -15,7 +15,7 @@ Codigo del Libro: Let's Go de Alex Edwards que usa la comunidad de Gophers Latam
 Es una actividad grupal de la comunidad de Gophers LATAM que se centra en el continuo aprendizaje y colaboración.
 
 
-Para poder sumarte iniciativa puedes ingresar al siguiente [enlace](https://discord.gg/pcKcpn43?event=1257519803724468305).
+Para poder sumarte a la iniciativa puedes ingresar al siguiente [enlace](https://discord.gg/pcKcpn43?event=1257519803724468305).
 
 
 Los horarios de las clases, son los siguientes:
