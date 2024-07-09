@@ -30,7 +30,7 @@ Los horarios de las clases, son los siguientes:
 | 🕒 13:00 hrs | 🇨🇷 Costa_Rica |
 | 🕒 15:00 hrs | 🇨🇺 Cuba |
 | 🕒 14:00 hrs | 🇪🇨 Ecuador |
-| 🕒 13:00 hrs | 🇸🇻 El_Salvador |
+| 🕒 13:00 hrs | 🇸🇻 El Salvador |
 | 🕒 13:00 hrs | 🇬🇹 Guatemala |
 | 🕒 13:00 hrs | 🇭🇳 Honduras |
 | 🕒 13:00 hrs | 🇲🇽 Mexico |
@@ -38,7 +38,7 @@ Los horarios de las clases, son los siguientes:
 | 🕒 14:00 hrs | 🇵🇦 Panama |
 | 🕒 15:00 hrs | 🇵🇾 Paraguay |
 | 🕒 14:00 hrs | 🇵🇪 Peru |
-| 🕒 15:00 hrs | 🇵🇷 Puerto_Rico |
+| 🕒 15:00 hrs | 🇵🇷 Puerto Rico |
 | 🕒 15:00 hrs | 🇩🇴 Republica_Dominicana |
 | 🕒 16:00 hrs | 🇺🇾 Uruguay |
 | 🕒 15:00 hrs | 🇻🇪 Venezuela |
