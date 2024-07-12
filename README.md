@@ -1,4 +1,4 @@
-## 🗃️ Snippetbox
+<h1 align="center">🗃️ Snippetbox</h1>
 
 Codigo del Libro: Let's Go de Alex Edwards que usa la comunidad de Gophers Latam para su club de lectura.
 
