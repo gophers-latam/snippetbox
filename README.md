@@ -1,4 +1,4 @@
-## Snippetbox
+## 🗃️ Snippetbox
 
 Codigo del Libro: Let's Go de Alex Edwards que usa la comunidad de Gophers Latam para su club de lectura.
 
@@ -8,41 +8,42 @@ Codigo del Libro: Let's Go de Alex Edwards que usa la comunidad de Gophers Latam
 
 > Los pilares de este libro se centran en la seguridad, el rendimiento y la escabilidad.
 
-### [Obten el libro](https://lets-go.alexedwards.net/)
+### 🤔 Como obtener el libro
 
-## Club de lectura
+[Obten el libro](https://lets-go.alexedwards.net/)
+
+## 📖 Club de lectura
 
 Es una actividad grupal de la comunidad de Gophers LATAM que se centra en el continuo aprendizaje y colaboración.
 
-
-Para poder sumarte a la iniciativa puedes ingresar al siguiente [enlace](https://discord.gg/pcKcpn43?event=1257519803724468305).
-
+> [!TIP]
+> Para poder sumarte a la iniciativa puedes ingresar al siguiente [enlace](https://discord.gg/pcKcpn43?event=1257519803724468305).
 
 Los horarios de las clases, son los siguientes:
 
-| Hora | País |
-|------|------|
-| 🕒 16:00 hrs | 🇦🇷 Argentina |
-| 🕒 15:00 hrs | 🇧🇴 Bolivia |
-| 🕒 16:00 hrs | 🇧🇷 Brasil |
-| 🕒 15:00 hrs | 🇨🇱 Chile |
-| 🕒 14:00 hrs | 🇨🇴 Colombia |
-| 🕒 13:00 hrs | 🇨🇷 Costa Rica |
-| 🕒 15:00 hrs | 🇨🇺 Cuba |
-| 🕒 14:00 hrs | 🇪🇨 Ecuador |
-| 🕒 13:00 hrs | 🇸🇻 El Salvador |
-| 🕒 13:00 hrs | 🇬🇹 Guatemala |
-| 🕒 13:00 hrs | 🇭🇳 Honduras |
-| 🕒 13:00 hrs | 🇲🇽 Mexico |
-| 🕒 13:00 hrs | 🇳🇮 Nicaragua |
-| 🕒 14:00 hrs | 🇵🇦 Panama |
-| 🕒 15:00 hrs | 🇵🇾 Paraguay |
-| 🕒 14:00 hrs | 🇵🇪 Peru |
-| 🕒 15:00 hrs | 🇵🇷 Puerto Rico |
+| Hora         | País                    |
+| ------------ | ----------------------- |
+| 🕒 16:00 hrs | 🇦🇷 Argentina            |
+| 🕒 15:00 hrs | 🇧🇴 Bolivia              |
+| 🕒 16:00 hrs | 🇧🇷 Brasil               |
+| 🕒 15:00 hrs | 🇨🇱 Chile                |
+| 🕒 14:00 hrs | 🇨🇴 Colombia             |
+| 🕒 13:00 hrs | 🇨🇷 Costa Rica           |
+| 🕒 15:00 hrs | 🇨🇺 Cuba                 |
+| 🕒 14:00 hrs | 🇪🇨 Ecuador              |
+| 🕒 13:00 hrs | 🇸🇻 El Salvador          |
+| 🕒 13:00 hrs | 🇬🇹 Guatemala            |
+| 🕒 13:00 hrs | 🇭🇳 Honduras             |
+| 🕒 13:00 hrs | 🇲🇽 Mexico               |
+| 🕒 13:00 hrs | 🇳🇮 Nicaragua            |
+| 🕒 14:00 hrs | 🇵🇦 Panama               |
+| 🕒 15:00 hrs | 🇵🇾 Paraguay             |
+| 🕒 14:00 hrs | 🇵🇪 Peru                 |
+| 🕒 15:00 hrs | 🇵🇷 Puerto Rico          |
 | 🕒 15:00 hrs | 🇩🇴 Republica Dominicana |
-| 🕒 16:00 hrs | 🇺🇾 Uruguay |
-| 🕒 15:00 hrs | 🇻🇪 Venezuela |
+| 🕒 16:00 hrs | 🇺🇾 Uruguay              |
+| 🕒 15:00 hrs | 🇻🇪 Venezuela            |
 
+## 🥷 Clases grabadas
 
-## Clases grabadas
 [Lista de las clases grabadas](https://docs.google.com/document/d/1ZG9CYJT22PlVw2ZsKbejs6ALCZYN1H0-en6BylZDCHU/edit?usp=sharing)
