@@ -8,7 +8,7 @@ Codigo del Libro: Let's Go de Alex Edwards que usa la comunidad de Gophers Latam
 
 > Los pilares de este libro se centran en la seguridad, el rendimiento y la escabilidad.
 
-### 🤔 Como obtener el libro
+## 🤔 Como obtener el libro
 
 [Obten el libro](https://lets-go.alexedwards.net/)
 
