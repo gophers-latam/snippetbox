@@ -53,4 +53,4 @@ Los horarios de las clases, son los siguientes:
 
 * Contribute guide
 * add dockerfile and makefile
-* add swagger
+* add documentation
