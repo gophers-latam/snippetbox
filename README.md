@@ -47,3 +47,10 @@ Los horarios de las clases, son los siguientes:
 ## 🥷 Clases grabadas
 
 [Lista de las clases grabadas](https://docs.google.com/document/d/1ZG9CYJT22PlVw2ZsKbejs6ALCZYN1H0-en6BylZDCHU/edit?usp=sharing)
+
+
+### TODO 
+
+* Contribue guide
+* add dockerfile and makefile files
+* add swagger
