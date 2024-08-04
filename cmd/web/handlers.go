@@ -5,9 +5,11 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
+	"strings"
+	"unicode/utf8"
 
-	"github.com/thiagomowszet/snippetbox/internal/models"
 	"github.com/julienschmidt/httprouter" // New import
+	"github.com/thiagomowszet/snippetbox/internal/models"
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
