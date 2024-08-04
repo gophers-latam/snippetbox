@@ -36,7 +36,6 @@ func main() {
 	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 
 	db, err := openDB(*dsn)
-
 	if err != nil {
 		errorLog.Fatal(err)
 	}
@@ -73,7 +72,6 @@ func main() {
 // for a given DSN.
 func openDB(dsn string) (*sql.DB, error) {
 	db, err := sql.Open("mysql", dsn)
-
 	if err != nil {
 		return nil, err
 	}
