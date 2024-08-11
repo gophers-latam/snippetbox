@@ -14,6 +14,7 @@ import (
 // Add a CurrentYear field to the templateData struct.
 type templateData struct {
 	CurrentYear int
+	Form        any
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
 }
